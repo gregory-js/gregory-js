@@ -1,0 +1,224 @@
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  font-family: Verdana, Impact, Charcoal, sans-serif;
+  background-color: #ccc;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* using flexbox for*/
+#pricing-container, footer, nav > ul {
+  display: flex;
+  flex-flow: row wrap;  
+  justify-content: start;
+  margin: 0px;
+}
+
+
+/* navbar styling*/
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#header {
+  position: relative;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  white-space: nowrap;
+  background-color: black;
+  z-index: 10;
+}
+
+#nav-bar > ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+#nav-bar li {
+  margin-right: 5px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+#nav-bar li a {
+  color: #fff;
+  text-decoration: none;  
+  padding: 10px;
+}
+
+#nav-bar li a:hover {
+  background-color: #fff;
+  color: #222;
+  font-weight: bold;
+}
+
+/* fix for nav-bar covers sections headers*/
+#header, #about, #features, #how-it-works, #pricing, #contacts {
+  padding-top: 40px;
+}
+
+/* styling header*/
+
+h2, #header {
+  text-align: center;
+}
+
+span {
+  border-bottom: solid 0.1em #0cc;
+	display: inline-block;
+}
+
+/* styling main content */
+main {
+  width: 70%;
+  margin: auto;
+  background-color: #aaa;
+  padding: 2%;
+}
+
+section {
+  min-height: 400px;
+}
+
+section:nth-of-type(odd) {
+    background: #bcc;
+}
+
+section:nth-of-type(even) {
+    background: #ccb;
+}
+
+
+.pricing {
+  padding: 0 1em;
+}
+
+.container ul {
+  list-style-type: circle;
+  padding-left: 0.8em;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#pricing-container{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.pricing {
+  flex: 1 1 30%;
+  background-color: #ccc;
+}
+
+form {
+  text-align: center;
+}
+
+#phone {
+  width: 34em;
+}
+
+/* footer*/
+
+footer {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.1em; 
+  background-color: black;
+  line-height: 1em;
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+#fotterinfo, #addinfo {
+  flex: 1 1 49%;
+}
+
+
+footer ol {
+  padding-left: 1.3em;
+  margin: 2px;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 800px) { 
+
+  #header-img {
+    display: none;
+  }
+
+  #nav-bar {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: 70vw;
+    white-space: nowrap;
+    z-index: 10;
+    background: whitesmoke url("https://raw.githubusercontent.com/gregory-js/drop/master/someproduct_small.png") no-repeat fixed center;
+    background-size: contain;
+    background-position: center top; 
+  }
+  
+  #nav-bar > ul {
+    position: relative;
+    flex-direction: column;
+  }
+
+  #nav-bar li {
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  #nav-bar li a {
+    padding: 2px;
+    color: #222;
+  }
+  
+  #pricing-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+    
+  main {
+  width: 95%;
+  margin: auto;
+  background-color: #aaa;
+  padding: 1%;
+  }
+  
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  #header, #about, #features, #how-it-works, #pricing, #contacts {
+    padding-top: 0px;
+  }
+
+}

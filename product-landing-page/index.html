@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Someproduct</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+            <header id="header">
+              <!-- Some header. ToDo: Add nav to footer (with css?) -->
+              <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li><a class="nav-link"href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                </ul>
+              </nav>
+              
+              <!-- Product logo -->
+              <img id="header-img" src="https://raw.githubusercontent.com/gregory-js/drop/master/someproduct_small.png" alt="Someproduct logo" height="400px">
+              <h1><span>Someproduct</span></h1>
+              <h2><span>Is The Best Product</span></h2>
+            </header>
+      
+      <!-- main. ToDo change divs to sections -->
+            <main>
+                <section class="container" id="about">
+                  <h2><span>About Someproduct&#8482</span></h2>
+                    <p>
+                        Someproduct&#8482 is a new word in the production and design of the best products 
+                        for you and your business! You can not only use Someproduct but also use it for any purpose 
+                        both at home and on a trip!
+                    </p>
+    
+                </section>
+    
+                <section class="container" id="features">
+                  <h2><span>Features</span></h2>
+                    <p>Someproduct&#8482 has the best features ther are!</p>
+                    <ul>
+                        <li>It's new!</li>
+                        <li>It's great!</li>
+                        <li>It's here now and forever! <sub>limited by warranty period</sub></li>
+                        <li>You can have it by mail! <sub>5 to 7 business day mailing period</sub></li>
+                        <li>There are no analogs! <sub>except those, that are</sub></li>
+                        <li>When you got it, you can't unget it!</li>
+                    </ul>
+                </section>
+    
+                <section class="container" id="how-it-works">
+                    <h2><span>You can see for yourself how it works right now!</span></h2>
+                    <!-- add a poster  src="https://raw.githubusercontent.com/gregory-js/drop/master/someproduct_small.png" -->
+                  <iframe id="video" src="https://player.vimeo.com/video/45196609" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    
+                </section>
+    
+                <section class="container" id="pricing">
+                  <h2><span>Buy various Someproduct packages!</span></h2>
+                    <div id="pricing-container">
+                      
+                        <div class="pricing">
+                            <h3>The XL Package</h3>
+                            <p>You can by your very own EXTRA LARGE package of Someproduct&#8482.</p>
+                          <p>With this package you'll get:
+                            <ul>
+                              <li>Your very own Someproduct#8482</li>
+                              <li>A brush for mustache, to brush while you're using Someproduct#8482</li>
+                              <li>Limited one year (!) warranty <sup><a href="#addinfo" title="The warranty applies only to mustache brush, if not being used."
+    >[1]</a></sup></li>
+                              <li>Gorgeous unfilled business cards, where you can put your your name, phone and company name! <sup><a href="#addinfo" title="The reverse side contains information about Someproduct. The buyer of Someproduct in accordance with the user agreement is obliged to distribute not less than 1000 (one thousand) units of business cards before the expiry of the warranty period of the product.">[2]</a></sup></li>
+                          </ul>
+                          </p>
+                        </div>
+                  
+                  
+                        <div class="pricing">
+                            <h3>The XXL Package</h3>
+                            <p>For those, who want more! You can get Double EXTRA package of our fabulous Someproduct&#8482!.</p>
+                          <p>With this package you'll get:
+                            <ul>
+                              <li>You'll get everything from XL package.</li>  
+                              <li>What could be better, right? But wait! There's more!</li>
+                              <li>Extended warranty!<sup><a href="#addinfo" title="Extended warranty is listed in your end user agreement and purchased separately.">[3]</a></sup></li>
+                              <li>Beautiful solid paper non refundable wrapper with genuine duktape sealing!</li>
+                          </ul>
+                          </p>
+                        </div>
+              
+              
+                        <div class="pricing">
+                            <h3>The XXXL Package</h3>
+                            <p>If you just can't get enough, buy our most awesome offer - Triple  eXtra  Large  Someproduct&#8482  Packege.</p>
+                            <p>With this package you'll get:
+                              <ul>
+                                <li>You'll get everything from XXL package.</li>
+                                <li>Even more EXTENDED warranty! <sup><a href="#addinfo" title="By one day">[3]</a></sup></li>
+                                <li>Additional support from our support team. <sup><a href="#addinfo">[4]</a></sup></li>
+                              </ul>
+                            </p>
+                        </div>
+      
+                    </div> <!-- End pricing-->
+    
+                </section> <!-- End pricing-section -->
+    
+                <!-- contacts. ToDo: add form for email/phone -->
+                <section class="container" id="contacts">
+                  <h2>Buy now!</h2>
+                  <form action="https://www.freecodecamp.com/email-submit" method="get" id="form">
+                    <label for="phone" id="name-label" >Contact us! Don't call us we'll call you!</label>
+                    <br />
+                    <input id="phone" type="text" name="client-contacts" id="client-contacts" placeholder="Enter phone number or your credit card number and cvv code (DON'T :))" required>
+                    <br />
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <br />
+                    <input type="submit" value="Buy now and be happy!" id="submit">
+    
+                  </form>
+    
+                </section>
+    
+            </main>
+    
+          <footer>
+            <div id="addinfo">
+              <ol>
+                <li>The warranty applies only to mustache brush, if not being used.</li>
+                <li>The reverse side contains information about Someproduct. The buyer of Someproduct in accordance with the user agreement is obliged to distribute not less than 1000 (one thousand) units of business cards before the expiry of the warranty period of the product.</li>
+                <li>Extended warranty is listed in your end user agreement and purchased separately.</li>
+                <li>By one day.</li>
+                <li>You can tell us what troubling you by the price of 9.99$ per minute.</li>
+              </ol>
+            </div>
+            <div id="fotterinfo">
+              <p>Someproduct&#8482 is a trademark of WYSIWYG Limited.</p>
+              <p>All rights reserved by someone else.</p>
+              <p>All legal info send to Boris Fraudoff, registered at Pacific ocean, third oil platform from north, Unrecognized monarchist republic of a failed Nigerian prince.</p>
+            </div>
+          </footer>
+    </div>
+</body>
+</html>

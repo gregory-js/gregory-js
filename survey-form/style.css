@@ -1,0 +1,55 @@
+.container{
+  background-color: grey;
+  text-align: center;
+  font-family: 'Arial Narrow', arial, sans-serif;
+  min-height: 100vh;
+}
+
+.main-content {
+  background-color: white;
+  width: 58%;
+  margin: auto;
+  min-height: 70vh;
+  box-shadow: 0px 0px 100px black;
+  padding: 2%;
+  background-color: #ffe993;
+}
+
+h1 {
+  display: block;
+  margin: auto;
+  padding: 0.5em;
+  text-shadow: 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff;
+}
+
+label, input {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+}
+
+input {
+  text-align: left;
+}
+
+fieldset {
+  width: 50%;
+  margin: auto;
+}
+
+fieldset label, fieldset input {
+  display: inline;
+  text-align: left;
+  width: 10%
+}
+
+select {
+  display: inline;
+  text-align: left;
+  width: 10%
+}
+
+#submit {
+  width: 10%;
+  padding: 0;
+}

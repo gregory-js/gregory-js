@@ -93,6 +93,10 @@ section {
   min-height: 400px;
 }
 
+#features, #about {
+  padding-left: 15px;
+}
+
 section:nth-of-type(odd) {
     background: #bcc;
 }
